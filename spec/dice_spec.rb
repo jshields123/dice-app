@@ -20,7 +20,7 @@ end
   it 'gives total score of dice' do
     expect(subject.total).to respond_to :total
   end
-  # it 'if no score return "no score"' do
-  #   expect(subject.total).to raise_error("no score")
-  # end
+  it 'if no score return "no score"' do
+    expect(subject.total).to raise_error("no score")
+  end
 end
